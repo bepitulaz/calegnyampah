@@ -8,9 +8,12 @@
 
 #import "CNViewController.h"
 #import "CNSaveViewController.h"
+#import <OpenEars/LanguageModelGenerator.h>
 
 @interface CNViewController ()
 @property (nonatomic, strong) UIImage *imageFromCam;
+@property (nonatomic, strong) UIImagePickerController *cameraUI;
+
 - (IBAction)cameraTapped:(id)sender;
 @end
 
@@ -18,18 +21,58 @@
 
 @synthesize avatarImg, photoCount, calegCount, dayCount, menuView, avatarName;
 @synthesize tableData;
+@synthesize pocketsphinxController;
+@synthesize openEarsEventsObserver;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// initiate the array
-    self.tableData = @[@"Eksplorasi", @"Koleksi Pribadi", @"Caleg Juara"];
+    
+    // language generator
+    LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
+    
+    NSArray *words = [NSArray arrayWithObjects:@"CAMERA", @"TANDAIN", nil];
+    NSString *name = @"NameIWantForMyLanguageModelFiles";
+    NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name forAcousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"]]; // Change "AcousticModelEnglish" to "AcousticModelSpanish" to create a Spanish language model instead of an English one.
+    
+    
+    NSDictionary *languageGeneratorResults = nil;
+    
+    NSString *lmPath = nil;
+    NSString *dicPath = nil;
+	
+    if([err code] == noErr) {
+        
+        languageGeneratorResults = [err userInfo];
+		
+        lmPath = [languageGeneratorResults objectForKey:@"LMPath"];
+        dicPath = [languageGeneratorResults objectForKey:@"DictionaryPath"];
+		
+    } else {
+        NSLog(@"Error: %@",[err localizedDescription]);
+    }
+    
+    [self.openEarsEventsObserver setDelegate:self];
+    [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
     
     [PFUser logInWithUsernameInBackground:@"bepitulaz" password:@"l3tm31nd0ng"
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             // Do stuff after successful login.
-                                            
+                                            PFQuery *query = [PFQuery queryWithClassName:@"UserPhoto"];
+                                            [query countObjectsInBackgroundWithBlock:^(int count, NSError *error) {
+                                                if (!error) {
+                                                    // The count request succeeded. Log the count
+                                                    self.photoCount.text = [NSString stringWithFormat:@"%d", count];
+                                                } else {
+                                                    // The request failed
+                                                }
+                                            }];
                                         } else {
                                             // The login failed. Check error to see why.
                                         }
@@ -45,13 +88,23 @@
 #pragma mark - button callbak
 - (IBAction)cameraTapped:(id)sender
 {
-    UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
-    cameraUI.delegate = self;
-    cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
-    cameraUI.allowsEditing = YES;
-    cameraUI.editing = YES;
+    [self showTheCam];
+}
+
+- (void)cameraByVoice
+{
+    [self showTheCam];
+}
+
+- (void)showTheCam
+{
+    self.cameraUI = [[UIImagePickerController alloc] init];
+    self.cameraUI.delegate = self;
+    self.cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+    self.cameraUI.allowsEditing = YES;
+    self.cameraUI.editing = YES;
     
-    [self presentViewController:cameraUI animated:YES completion:nil];
+    [self presentViewController:self.cameraUI animated:YES completion:nil];
 }
 
 #pragma mark - table view delegate
@@ -98,6 +151,77 @@
         saveVC = (CNSaveViewController *)dest.topViewController;
         saveVC.imageFromCam = self.imageFromCam;
     }
+}
+
+#pragma mark - speech recognition
+- (PocketsphinxController *)pocketsphinxController {
+	if (pocketsphinxController == nil) {
+		pocketsphinxController = [[PocketsphinxController alloc] init];
+	}
+	return pocketsphinxController;
+}
+
+- (OpenEarsEventsObserver *)openEarsEventsObserver {
+	if (openEarsEventsObserver == nil) {
+		openEarsEventsObserver = [[OpenEarsEventsObserver alloc] init];
+	}
+	return openEarsEventsObserver;
+}
+
+#pragma mark - Open ears delegate method
+- (void)pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
+	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
+    
+    if([hypothesis isEqualToString:@"CAMERA"]) {
+        [self performSelector:@selector(cameraByVoice)];
+    }
+    
+    if([hypothesis isEqualToString:@"TANDAIN"]) {
+        [self.cameraUI takePicture];
+    }
+}
+
+- (void)pocketsphinxDidStartCalibration {
+	NSLog(@"Pocketsphinx calibration has started.");
+}
+
+- (void)pocketsphinxDidCompleteCalibration {
+	NSLog(@"Pocketsphinx calibration is complete.");
+}
+
+- (void)pocketsphinxDidStartListening {
+	NSLog(@"Pocketsphinx is now listening.");
+}
+
+- (void)pocketsphinxDidDetectSpeech {
+	NSLog(@"Pocketsphinx has detected speech.");
+}
+
+- (void)pocketsphinxDidDetectFinishedSpeech {
+	NSLog(@"Pocketsphinx has detected a period of silence, concluding an utterance.");
+}
+
+- (void)pocketsphinxDidStopListening {
+	NSLog(@"Pocketsphinx has stopped listening.");
+}
+
+- (void)pocketsphinxDidSuspendRecognition {
+	NSLog(@"Pocketsphinx has suspended recognition.");
+}
+
+- (void)pocketsphinxDidResumeRecognition {
+	NSLog(@"Pocketsphinx has resumed recognition.");
+}
+
+- (void)pocketsphinxDidChangeLanguageModelToFile:(NSString *)newLanguageModelPathAsString andDictionary:(NSString *)newDictionaryPathAsString {
+	NSLog(@"Pocketsphinx is now using the following language model: \n%@ and the following dictionary: %@",newLanguageModelPathAsString,newDictionaryPathAsString);
+}
+
+- (void)pocketSphinxContinuousSetupDidFail { // This can let you know that something went wrong with the recognition loop startup. Turn on OPENEARSLOGGING to learn why.
+	NSLog(@"Setting up the continuous recognition loop has failed for some reason, please turn on OpenEarsLogging to learn more.");
+}
+- (void)testRecognitionCompleted {
+	NSLog(@"A test file that was submitted for recognition is now complete.");
 }
 
 @end

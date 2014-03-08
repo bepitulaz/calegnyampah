@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import <OpenEars/PocketsphinxController.h>
+#import <OpenEars/AcousticModel.h>
+#import <OpenEars/OpenEarsEventsObserver.h>
 
-@interface CNViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface CNViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, OpenEarsEventsObserverDelegate>
+{
+    PocketsphinxController *pocketsphinxController;
+    OpenEarsEventsObserver *openEarsEventsObserver;
+}
 
 @property (nonatomic, strong) IBOutlet UIImageView *avatarImg;
 @property (nonatomic, strong) IBOutlet UILabel *photoCount;
@@ -18,4 +25,6 @@
 @property (nonatomic, strong) IBOutlet UILabel *avatarName;
 @property (nonatomic, strong) IBOutlet UITableView *menuView;
 @property (nonatomic, strong) NSArray *tableData;
+@property (strong, nonatomic) PocketsphinxController *pocketsphinxController;
+@property (strong, nonatomic) OpenEarsEventsObserver *openEarsEventsObserver;
 @end

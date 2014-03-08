@@ -14,6 +14,7 @@
 @property (nonatomic, strong) UILabel *lokasiCaleg;
 @property (nonatomic) double latitude;
 @property (nonatomic) double longitude;
+@property (nonatomic, strong) NSString *idCaleg;
 @property (nonatomic, strong) CLGeocoder *geocoder;
 
 - (IBAction)cancelTapped:(id)sender;
@@ -96,6 +97,7 @@
         userPhoto[@"location"] = point;
         userPhoto[@"calegName"] = self.namaCaleg.text;
         userPhoto[@"locationString"] = self.lokasiCaleg.text;
+        userPhoto[@"idCaleg"] = self.idCaleg;
         [userPhoto saveInBackground];
         
         // saving image
@@ -116,7 +118,8 @@
 - (void)eventListenerDidReceiveNotification:(NSNotification *)notification
 {
     if ([[notification name] isEqualToString:@"CalegSelected"]) {
-        self.namaCaleg.text = notification.object;
+        self.idCaleg = [notification.object objectForKey:@"id"];
+        self.namaCaleg.text = [notification.object objectForKey:@"nama"];
     }
 }
 
@@ -136,7 +139,6 @@
     self.latitude = [[locations objectAtIndex:0] coordinate].latitude;
     self.longitude = [[locations objectAtIndex:0] coordinate].longitude;
     
-    [self.locManager stopUpdatingLocation];
     NSLog(@"%f, %f", self.latitude, self.longitude);
     
     // reverse geocoding

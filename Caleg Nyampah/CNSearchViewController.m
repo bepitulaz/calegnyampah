@@ -54,7 +54,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    int rows = 0;
+    NSUInteger rows = 0;
     
     if (tableView == self.tableView) {
         rows = [self.originalData count];
@@ -94,11 +94,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(tableView == self.tableView) {
-        [self postNotification:@"CalegSelected" withObject:[[self.originalData objectAtIndex:indexPath.row] objectForKey:@"nama"]];
+        NSDictionary *dataCalegToPass = [NSDictionary dictionaryWithObjectsAndKeys:[[self.originalData objectAtIndex:indexPath.row] objectForKey:@"nama"], @"nama", [[self.originalData objectAtIndex:indexPath.row] objectForKey:@"id"], @"id", nil];
+        [self postNotification:@"CalegSelected" withObject:dataCalegToPass];
     }
     
     if(tableView == self.searchDisplayController.searchResultsTableView) {
-        [self postNotification:@"CalegSelected" withObject:[[self.searchData objectAtIndex:indexPath.row] objectForKey:@"nama"]];
+         NSDictionary *dataCalegToPass = [NSDictionary dictionaryWithObjectsAndKeys:[[self.searchData objectAtIndex:indexPath.row] objectForKey:@"nama"], @"nama", [[self.searchData objectAtIndex:indexPath.row] objectForKey:@"id"], @"id", nil];
+        [self postNotification:@"CalegSelected" withObject:dataCalegToPass];
     }
     
     [self.navigationController popToRootViewControllerAnimated:YES];
