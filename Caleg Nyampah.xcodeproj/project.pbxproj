@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BE4AF6F18CAE31100026D62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF6E18CAE31100026D62 /* Foundation.framework */; };
+		7BE4AF7118CAE31100026D62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF7018CAE31100026D62 /* CoreGraphics.framework */; };
+		7BE4AF7318CAE31100026D62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF7218CAE31100026D62 /* UIKit.framework */; };
+		7BE4AF7918CAE31200026D62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4AF7718CAE31200026D62 /* InfoPlist.strings */; };
+		7BE4AF7B18CAE31200026D62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4AF7A18CAE31200026D62 /* main.m */; };
+		7BE4AF7F18CAE31200026D62 /* CNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4AF7E18CAE31200026D62 /* CNAppDelegate.m */; };
+		7BE4AF8218CAE31200026D62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4AF8018CAE31200026D62 /* Main.storyboard */; };
+		7BE4AF8518CAE31200026D62 /* CNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4AF8418CAE31200026D62 /* CNViewController.m */; };
+		7BE4AF8718CAE31200026D62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4AF8618CAE31200026D62 /* Images.xcassets */; };
+		7BE4AF8E18CAE31200026D62 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF8D18CAE31200026D62 /* XCTest.framework */; };
+		7BE4AF8F18CAE31200026D62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF6E18CAE31100026D62 /* Foundation.framework */; };
+		7BE4AF9018CAE31200026D62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF7218CAE31100026D62 /* UIKit.framework */; };
+		7BE4AF9818CAE31200026D62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4AF9618CAE31200026D62 /* InfoPlist.strings */; };
+		7BE4AF9A18CAE31200026D62 /* Caleg_NyampahTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4AF9918CAE31200026D62 /* Caleg_NyampahTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BE4AF9118CAE31200026D62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BE4AF6318CAE31100026D62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BE4AF6A18CAE31100026D62;
+			remoteInfo = "Caleg Nyampah";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BE4AF6B18CAE31100026D62 /* Caleg Nyampah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caleg Nyampah.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE4AF6E18CAE31100026D62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7BE4AF7018CAE31100026D62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7BE4AF7218CAE31100026D62 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7BE4AF7618CAE31200026D62 /* Caleg Nyampah-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caleg Nyampah-Info.plist"; sourceTree = "<group>"; };
+		7BE4AF7818CAE31200026D62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BE4AF7A18CAE31200026D62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BE4AF7C18CAE31200026D62 /* Caleg Nyampah-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Caleg Nyampah-Prefix.pch"; sourceTree = "<group>"; };
+		7BE4AF7D18CAE31200026D62 /* CNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNAppDelegate.h; sourceTree = "<group>"; };
+		7BE4AF7E18CAE31200026D62 /* CNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNAppDelegate.m; sourceTree = "<group>"; };
+		7BE4AF8118CAE31200026D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BE4AF8318CAE31200026D62 /* CNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNViewController.h; sourceTree = "<group>"; };
+		7BE4AF8418CAE31200026D62 /* CNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNViewController.m; sourceTree = "<group>"; };
+		7BE4AF8618CAE31200026D62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7BE4AF8C18CAE31200026D62 /* Caleg NyampahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Caleg NyampahTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE4AF8D18CAE31200026D62 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7BE4AF9518CAE31200026D62 /* Caleg NyampahTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caleg NyampahTests-Info.plist"; sourceTree = "<group>"; };
+		7BE4AF9718CAE31200026D62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BE4AF9918CAE31200026D62 /* Caleg_NyampahTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caleg_NyampahTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BE4AF6818CAE31100026D62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE4AF7118CAE31100026D62 /* CoreGraphics.framework in Frameworks */,
+				7BE4AF7318CAE31100026D62 /* UIKit.framework in Frameworks */,
+				7BE4AF6F18CAE31100026D62 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE4AF8918CAE31200026D62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE4AF8E18CAE31200026D62 /* XCTest.framework in Frameworks */,
+				7BE4AF9018CAE31200026D62 /* UIKit.framework in Frameworks */,
+				7BE4AF8F18CAE31200026D62 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BE4AF6218CAE31100026D62 = {
+			isa = PBXGroup;
+			children = (
+				7BE4AF7418CAE31100026D62 /* Caleg Nyampah */,
+				7BE4AF9318CAE31200026D62 /* Caleg NyampahTests */,
+				7BE4AF6D18CAE31100026D62 /* Frameworks */,
+				7BE4AF6C18CAE31100026D62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BE4AF6C18CAE31100026D62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4AF6B18CAE31100026D62 /* Caleg Nyampah.app */,
+				7BE4AF8C18CAE31200026D62 /* Caleg NyampahTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BE4AF6D18CAE31100026D62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4AF6E18CAE31100026D62 /* Foundation.framework */,
+				7BE4AF7018CAE31100026D62 /* CoreGraphics.framework */,
+				7BE4AF7218CAE31100026D62 /* UIKit.framework */,
+				7BE4AF8D18CAE31200026D62 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BE4AF7418CAE31100026D62 /* Caleg Nyampah */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4AF7D18CAE31200026D62 /* CNAppDelegate.h */,
+				7BE4AF7E18CAE31200026D62 /* CNAppDelegate.m */,
+				7BE4AF8018CAE31200026D62 /* Main.storyboard */,
+				7BE4AF8318CAE31200026D62 /* CNViewController.h */,
+				7BE4AF8418CAE31200026D62 /* CNViewController.m */,
+				7BE4AF8618CAE31200026D62 /* Images.xcassets */,
+				7BE4AF7518CAE31200026D62 /* Supporting Files */,
+			);
+			path = "Caleg Nyampah";
+			sourceTree = "<group>";
+		};
+		7BE4AF7518CAE31200026D62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4AF7618CAE31200026D62 /* Caleg Nyampah-Info.plist */,
+				7BE4AF7718CAE31200026D62 /* InfoPlist.strings */,
+				7BE4AF7A18CAE31200026D62 /* main.m */,
+				7BE4AF7C18CAE31200026D62 /* Caleg Nyampah-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BE4AF9318CAE31200026D62 /* Caleg NyampahTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4AF9918CAE31200026D62 /* Caleg_NyampahTests.m */,
+				7BE4AF9418CAE31200026D62 /* Supporting Files */,
+			);
+			path = "Caleg NyampahTests";
+			sourceTree = "<group>";
+		};
+		7BE4AF9418CAE31200026D62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4AF9518CAE31200026D62 /* Caleg NyampahTests-Info.plist */,
+				7BE4AF9618CAE31200026D62 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BE4AF6A18CAE31100026D62 /* Caleg Nyampah */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE4AF9D18CAE31200026D62 /* Build configuration list for PBXNativeTarget "Caleg Nyampah" */;
+			buildPhases = (
+				7BE4AF6718CAE31100026D62 /* Sources */,
+				7BE4AF6818CAE31100026D62 /* Frameworks */,
+				7BE4AF6918CAE31100026D62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Caleg Nyampah";
+			productName = "Caleg Nyampah";
+			productReference = 7BE4AF6B18CAE31100026D62 /* Caleg Nyampah.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BE4AF8B18CAE31200026D62 /* Caleg NyampahTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE4AFA018CAE31200026D62 /* Build configuration list for PBXNativeTarget "Caleg NyampahTests" */;
+			buildPhases = (
+				7BE4AF8818CAE31200026D62 /* Sources */,
+				7BE4AF8918CAE31200026D62 /* Frameworks */,
+				7BE4AF8A18CAE31200026D62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BE4AF9218CAE31200026D62 /* PBXTargetDependency */,
+			);
+			name = "Caleg NyampahTests";
+			productName = "Caleg NyampahTests";
+			productReference = 7BE4AF8C18CAE31200026D62 /* Caleg NyampahTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BE4AF6318CAE31100026D62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CN;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = asep.co;
+				TargetAttributes = {
+					7BE4AF8B18CAE31200026D62 = {
+						TestTargetID = 7BE4AF6A18CAE31100026D62;
+					};
+				};
+			};
+			buildConfigurationList = 7BE4AF6618CAE31100026D62 /* Build configuration list for PBXProject "Caleg Nyampah" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BE4AF6218CAE31100026D62;
+			productRefGroup = 7BE4AF6C18CAE31100026D62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BE4AF6A18CAE31100026D62 /* Caleg Nyampah */,
+				7BE4AF8B18CAE31200026D62 /* Caleg NyampahTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BE4AF6918CAE31100026D62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE4AF8718CAE31200026D62 /* Images.xcassets in Resources */,
+				7BE4AF7918CAE31200026D62 /* InfoPlist.strings in Resources */,
+				7BE4AF8218CAE31200026D62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE4AF8A18CAE31200026D62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE4AF9818CAE31200026D62 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BE4AF6718CAE31100026D62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE4AF7B18CAE31200026D62 /* main.m in Sources */,
+				7BE4AF7F18CAE31200026D62 /* CNAppDelegate.m in Sources */,
+				7BE4AF8518CAE31200026D62 /* CNViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE4AF8818CAE31200026D62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE4AF9A18CAE31200026D62 /* Caleg_NyampahTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BE4AF9218CAE31200026D62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BE4AF6A18CAE31100026D62 /* Caleg Nyampah */;
+			targetProxy = 7BE4AF9118CAE31200026D62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BE4AF7718CAE31200026D62 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE4AF7818CAE31200026D62 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7BE4AF8018CAE31200026D62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE4AF8118CAE31200026D62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BE4AF9618CAE31200026D62 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE4AF9718CAE31200026D62 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BE4AF9B18CAE31200026D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7BE4AF9C18CAE31200026D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BE4AF9E18CAE31200026D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caleg Nyampah/Caleg Nyampah-Prefix.pch";
+				INFOPLIST_FILE = "Caleg Nyampah/Caleg Nyampah-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7BE4AF9F18CAE31200026D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caleg Nyampah/Caleg Nyampah-Prefix.pch";
+				INFOPLIST_FILE = "Caleg Nyampah/Caleg Nyampah-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7BE4AFA118CAE31200026D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Caleg Nyampah.app/Caleg Nyampah";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caleg Nyampah/Caleg Nyampah-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Caleg NyampahTests/Caleg NyampahTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7BE4AFA218CAE31200026D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Caleg Nyampah.app/Caleg Nyampah";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caleg Nyampah/Caleg Nyampah-Prefix.pch";
+				INFOPLIST_FILE = "Caleg NyampahTests/Caleg NyampahTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BE4AF6618CAE31100026D62 /* Build configuration list for PBXProject "Caleg Nyampah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE4AF9B18CAE31200026D62 /* Debug */,
+				7BE4AF9C18CAE31200026D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE4AF9D18CAE31200026D62 /* Build configuration list for PBXNativeTarget "Caleg Nyampah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE4AF9E18CAE31200026D62 /* Debug */,
+				7BE4AF9F18CAE31200026D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7BE4AFA018CAE31200026D62 /* Build configuration list for PBXNativeTarget "Caleg NyampahTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE4AFA118CAE31200026D62 /* Debug */,
+				7BE4AFA218CAE31200026D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BE4AF6318CAE31100026D62 /* Project object */;
+}
