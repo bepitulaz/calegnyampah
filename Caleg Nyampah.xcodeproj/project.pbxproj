@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045EBEBB5EE74CF68B98012F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DFFD3560644DAEBF4CBD22 /* libPods.a */; };
 		7BE4AF6F18CAE31100026D62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF6E18CAE31100026D62 /* Foundation.framework */; };
 		7BE4AF7118CAE31100026D62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF7018CAE31100026D62 /* CoreGraphics.framework */; };
 		7BE4AF7318CAE31100026D62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF7218CAE31100026D62 /* UIKit.framework */; };
@@ -21,6 +22,22 @@
 		7BE4AF9018CAE31200026D62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF7218CAE31100026D62 /* UIKit.framework */; };
 		7BE4AF9818CAE31200026D62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4AF9618CAE31200026D62 /* InfoPlist.strings */; };
 		7BE4AF9A18CAE31200026D62 /* Caleg_NyampahTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4AF9918CAE31200026D62 /* Caleg_NyampahTests.m */; };
+		7BE4AFA518CAF4C600026D62 /* CNSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4AFA418CAF4C600026D62 /* CNSaveViewController.m */; };
+		7BE4AFA918CAF62F00026D62 /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4AFA718CAF62F00026D62 /* fb.png */; };
+		7BE4AFAA18CAF62F00026D62 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4AFA818CAF62F00026D62 /* twitter.png */; };
+		7BE4AFAC18CAF7BB00026D62 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4AFAB18CAF7BB00026D62 /* avatar.jpg */; };
+		7BE4AFAF18CB06C600026D62 /* CNSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4AFAE18CB06C600026D62 /* CNSearchViewController.m */; };
+		7BE4AFB118CB1A8800026D62 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AFB018CB1A8800026D62 /* CoreLocation.framework */; };
+		7BE4AFB318CB314100026D62 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AFB218CB314100026D62 /* Parse.framework */; };
+		7BE4AFB518CB315700026D62 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AFB418CB315700026D62 /* AudioToolbox.framework */; };
+		7BE4AFB718CB315F00026D62 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AFB618CB315F00026D62 /* CFNetwork.framework */; };
+		7BE4AFB918CB316B00026D62 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AFB818CB316B00026D62 /* libz.dylib */; };
+		7BE4AFBB18CB317500026D62 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AFBA18CB317500026D62 /* MobileCoreServices.framework */; };
+		7BE4AFBD18CB318000026D62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AFBC18CB318000026D62 /* QuartzCore.framework */; };
+		7BE4AFBF18CB318800026D62 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AFBE18CB318800026D62 /* Security.framework */; };
+		7BE4AFC118CB319100026D62 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AFC018CB319100026D62 /* StoreKit.framework */; };
+		7BE4AFC318CB319F00026D62 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AFC218CB319F00026D62 /* SystemConfiguration.framework */; };
+		7BE4AFC518CB361D00026D62 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AFC418CB361D00026D62 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22DFFD3560644DAEBF4CBD22 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE4AF6B18CAE31100026D62 /* Caleg Nyampah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caleg Nyampah.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE4AF6E18CAE31100026D62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7BE4AF7018CAE31100026D62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +71,25 @@
 		7BE4AF9518CAE31200026D62 /* Caleg NyampahTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caleg NyampahTests-Info.plist"; sourceTree = "<group>"; };
 		7BE4AF9718CAE31200026D62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7BE4AF9918CAE31200026D62 /* Caleg_NyampahTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caleg_NyampahTests.m; sourceTree = "<group>"; };
+		7BE4AFA318CAF4C600026D62 /* CNSaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSaveViewController.h; sourceTree = "<group>"; };
+		7BE4AFA418CAF4C600026D62 /* CNSaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSaveViewController.m; sourceTree = "<group>"; };
+		7BE4AFA718CAF62F00026D62 /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
+		7BE4AFA818CAF62F00026D62 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		7BE4AFAB18CAF7BB00026D62 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
+		7BE4AFAD18CB06C600026D62 /* CNSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSearchViewController.h; sourceTree = "<group>"; };
+		7BE4AFAE18CB06C600026D62 /* CNSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSearchViewController.m; sourceTree = "<group>"; };
+		7BE4AFB018CB1A8800026D62 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7BE4AFB218CB314100026D62 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		7BE4AFB418CB315700026D62 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7BE4AFB618CB315F00026D62 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7BE4AFB818CB316B00026D62 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7BE4AFBA18CB317500026D62 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7BE4AFBC18CB318000026D62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7BE4AFBE18CB318800026D62 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7BE4AFC018CB319100026D62 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		7BE4AFC218CB319F00026D62 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7BE4AFC418CB361D00026D62 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		8E42A3042D6F4236BEDDC1B1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +97,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE4AFC318CB319F00026D62 /* SystemConfiguration.framework in Frameworks */,
+				7BE4AFC118CB319100026D62 /* StoreKit.framework in Frameworks */,
+				7BE4AFBF18CB318800026D62 /* Security.framework in Frameworks */,
+				7BE4AFBD18CB318000026D62 /* QuartzCore.framework in Frameworks */,
+				7BE4AFBB18CB317500026D62 /* MobileCoreServices.framework in Frameworks */,
+				7BE4AFB918CB316B00026D62 /* libz.dylib in Frameworks */,
+				7BE4AFB718CB315F00026D62 /* CFNetwork.framework in Frameworks */,
+				7BE4AFB518CB315700026D62 /* AudioToolbox.framework in Frameworks */,
+				7BE4AFB118CB1A8800026D62 /* CoreLocation.framework in Frameworks */,
 				7BE4AF7118CAE31100026D62 /* CoreGraphics.framework in Frameworks */,
 				7BE4AF7318CAE31100026D62 /* UIKit.framework in Frameworks */,
+				7BE4AFC518CB361D00026D62 /* FacebookSDK.framework in Frameworks */,
 				7BE4AF6F18CAE31100026D62 /* Foundation.framework in Frameworks */,
+				7BE4AFB318CB314100026D62 /* Parse.framework in Frameworks */,
+				045EBEBB5EE74CF68B98012F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +135,7 @@
 				7BE4AF9318CAE31200026D62 /* Caleg NyampahTests */,
 				7BE4AF6D18CAE31100026D62 /* Frameworks */,
 				7BE4AF6C18CAE31100026D62 /* Products */,
+				8E42A3042D6F4236BEDDC1B1 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +151,22 @@
 		7BE4AF6D18CAE31100026D62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BE4AFC418CB361D00026D62 /* FacebookSDK.framework */,
+				7BE4AFC218CB319F00026D62 /* SystemConfiguration.framework */,
+				7BE4AFC018CB319100026D62 /* StoreKit.framework */,
+				7BE4AFBE18CB318800026D62 /* Security.framework */,
+				7BE4AFBC18CB318000026D62 /* QuartzCore.framework */,
+				7BE4AFBA18CB317500026D62 /* MobileCoreServices.framework */,
+				7BE4AFB818CB316B00026D62 /* libz.dylib */,
+				7BE4AFB618CB315F00026D62 /* CFNetwork.framework */,
+				7BE4AFB418CB315700026D62 /* AudioToolbox.framework */,
+				7BE4AFB218CB314100026D62 /* Parse.framework */,
+				7BE4AFB018CB1A8800026D62 /* CoreLocation.framework */,
 				7BE4AF6E18CAE31100026D62 /* Foundation.framework */,
 				7BE4AF7018CAE31100026D62 /* CoreGraphics.framework */,
 				7BE4AF7218CAE31100026D62 /* UIKit.framework */,
 				7BE4AF8D18CAE31200026D62 /* XCTest.framework */,
+				22DFFD3560644DAEBF4CBD22 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,11 +174,16 @@
 		7BE4AF7418CAE31100026D62 /* Caleg Nyampah */ = {
 			isa = PBXGroup;
 			children = (
+				7BE4AFA618CAF62400026D62 /* Assets */,
 				7BE4AF7D18CAE31200026D62 /* CNAppDelegate.h */,
 				7BE4AF7E18CAE31200026D62 /* CNAppDelegate.m */,
 				7BE4AF8018CAE31200026D62 /* Main.storyboard */,
 				7BE4AF8318CAE31200026D62 /* CNViewController.h */,
 				7BE4AF8418CAE31200026D62 /* CNViewController.m */,
+				7BE4AFA318CAF4C600026D62 /* CNSaveViewController.h */,
+				7BE4AFA418CAF4C600026D62 /* CNSaveViewController.m */,
+				7BE4AFAD18CB06C600026D62 /* CNSearchViewController.h */,
+				7BE4AFAE18CB06C600026D62 /* CNSearchViewController.m */,
 				7BE4AF8618CAE31200026D62 /* Images.xcassets */,
 				7BE4AF7518CAE31200026D62 /* Supporting Files */,
 			);
@@ -152,6 +219,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7BE4AFA618CAF62400026D62 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4AFAB18CAF7BB00026D62 /* avatar.jpg */,
+				7BE4AFA718CAF62F00026D62 /* fb.png */,
+				7BE4AFA818CAF62F00026D62 /* twitter.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BE4AF9D18CAE31200026D62 /* Build configuration list for PBXNativeTarget "Caleg Nyampah" */;
 			buildPhases = (
+				DB0238A23ECD4B3286529E8E /* Check Pods Manifest.lock */,
 				7BE4AF6718CAE31100026D62 /* Sources */,
 				7BE4AF6818CAE31100026D62 /* Frameworks */,
 				7BE4AF6918CAE31100026D62 /* Resources */,
+				D5DE82026A224D9EA7933BED /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BE4AF8718CAE31200026D62 /* Images.xcassets in Resources */,
+				7BE4AFA918CAF62F00026D62 /* fb.png in Resources */,
+				7BE4AFAC18CAF7BB00026D62 /* avatar.jpg in Resources */,
+				7BE4AFAA18CAF62F00026D62 /* twitter.png in Resources */,
 				7BE4AF7918CAE31200026D62 /* InfoPlist.strings in Resources */,
 				7BE4AF8218CAE31200026D62 /* Main.storyboard in Resources */,
 			);
@@ -245,12 +327,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D5DE82026A224D9EA7933BED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB0238A23ECD4B3286529E8E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7BE4AF6718CAE31100026D62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE4AFA518CAF4C600026D62 /* CNSaveViewController.m in Sources */,
 				7BE4AF7B18CAE31200026D62 /* main.m in Sources */,
+				7BE4AFAF18CB06C600026D62 /* CNSearchViewController.m in Sources */,
 				7BE4AF7F18CAE31200026D62 /* CNAppDelegate.m in Sources */,
 				7BE4AF8518CAE31200026D62 /* CNViewController.m in Sources */,
 			);
@@ -376,9 +493,14 @@
 		};
 		7BE4AF9E18CAE31200026D62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E42A3042D6F4236BEDDC1B1 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/bepitulaz/Documents/ios-project/Caleg\\ Nyampah",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Caleg Nyampah/Caleg Nyampah-Prefix.pch";
 				INFOPLIST_FILE = "Caleg Nyampah/Caleg Nyampah-Info.plist";
@@ -389,9 +511,14 @@
 		};
 		7BE4AF9F18CAE31200026D62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E42A3042D6F4236BEDDC1B1 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/bepitulaz/Documents/ios-project/Caleg\\ Nyampah",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Caleg Nyampah/Caleg Nyampah-Prefix.pch";
 				INFOPLIST_FILE = "Caleg Nyampah/Caleg Nyampah-Info.plist";
@@ -461,6 +588,7 @@
 				7BE4AF9F18CAE31200026D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BE4AFA018CAE31200026D62 /* Build configuration list for PBXNativeTarget "Caleg NyampahTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +597,7 @@
 				7BE4AFA218CAE31200026D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

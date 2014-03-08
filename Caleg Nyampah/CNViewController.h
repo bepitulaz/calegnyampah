@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface CNViewController : UIViewController
+@interface CNViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+@property (nonatomic, strong) IBOutlet UIImageView *avatarImg;
+@property (nonatomic, strong) IBOutlet UILabel *photoCount;
+@property (nonatomic, strong) IBOutlet UILabel *calegCount;
+@property (nonatomic, strong) IBOutlet UILabel *dayCount;
+@property (nonatomic, strong) IBOutlet UILabel *avatarName;
+@property (nonatomic, strong) IBOutlet UITableView *menuView;
+@property (nonatomic, strong) NSArray *tableData;
 @end
