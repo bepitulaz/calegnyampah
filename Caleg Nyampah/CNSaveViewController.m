@@ -8,6 +8,7 @@
 
 #import "CNSaveViewController.h"
 #import "CNSearchViewController.h"
+#import "DDHelper.h"
 
 @interface CNSaveViewController ()
 @property (nonatomic, strong) UILabel *namaCaleg;
@@ -40,6 +41,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.view.backgroundColor = [DDHelper colorFromRGB:@"f0f0f0"];
     
     UIImageView *showImage = [[UIImageView alloc] initWithFrame:CGRectMake(10, 73, 300, 300)];
     showImage.image = self.imageFromCam;

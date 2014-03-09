@@ -8,6 +8,7 @@
 
 #import "CNSearchViewController.h"
 #import <AFNetworking/AFNetworking.h>
+#import "DDHelper.h"
 
 @interface CNSearchViewController ()
 
@@ -30,6 +31,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // change color
+    [self.navigationController navigationBar].barTintColor = [DDHelper colorFromRGB:@"#db5548"];
+    [self.navigationController navigationBar].tintColor = [DDHelper colorFromRGB:@"#ffffff"];
+    self.view.backgroundColor = [DDHelper colorFromRGB:@"f0f0f0"];
     
     // start downloading the list of caleg
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];

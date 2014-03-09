@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		045EBEBB5EE74CF68B98012F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DFFD3560644DAEBF4CBD22 /* libPods.a */; };
+		7B483E4F18CBFEE8005F82FB /* DDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B483E4E18CBFEE8005F82FB /* DDHelper.m */; };
+		7B483E5118CC0E0D005F82FB /* koleksi.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B483E5018CC0E0D005F82FB /* koleksi.png */; };
+		7B483E5718CC101F005F82FB /* statistik.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B483E5618CC101F005F82FB /* statistik.png */; };
 		7BE4AF6F18CAE31100026D62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF6E18CAE31100026D62 /* Foundation.framework */; };
 		7BE4AF7118CAE31100026D62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF7018CAE31100026D62 /* CoreGraphics.framework */; };
 		7BE4AF7318CAE31100026D62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE4AF7218CAE31100026D62 /* UIKit.framework */; };
@@ -63,6 +66,10 @@
 
 /* Begin PBXFileReference section */
 		22DFFD3560644DAEBF4CBD22 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B483E4D18CBFEE8005F82FB /* DDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHelper.h; sourceTree = "<group>"; };
+		7B483E4E18CBFEE8005F82FB /* DDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHelper.m; sourceTree = "<group>"; };
+		7B483E5018CC0E0D005F82FB /* koleksi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = koleksi.png; sourceTree = "<group>"; };
+		7B483E5618CC101F005F82FB /* statistik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statistik.png; sourceTree = "<group>"; };
 		7BE4AF6B18CAE31100026D62 /* Caleg Nyampah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caleg Nyampah.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE4AF6E18CAE31100026D62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7BE4AF7018CAE31100026D62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -210,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				7BE4AFA618CAF62400026D62 /* Assets */,
+				7B483E4D18CBFEE8005F82FB /* DDHelper.h */,
+				7B483E4E18CBFEE8005F82FB /* DDHelper.m */,
 				7BE4AF7D18CAE31200026D62 /* CNAppDelegate.h */,
 				7BE4AF7E18CAE31200026D62 /* CNAppDelegate.m */,
 				7BE4AF8018CAE31200026D62 /* Main.storyboard */,
@@ -265,6 +274,8 @@
 		7BE4AFA618CAF62400026D62 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7B483E5618CC101F005F82FB /* statistik.png */,
+				7B483E5018CC0E0D005F82FB /* koleksi.png */,
 				7BE4AFAB18CAF7BB00026D62 /* avatar.jpg */,
 				7BE4AFA718CAF62F00026D62 /* fb.png */,
 				7BE4AFA818CAF62F00026D62 /* twitter.png */,
@@ -364,12 +375,14 @@
 			files = (
 				7BE4AF8718CAE31200026D62 /* Images.xcassets in Resources */,
 				7BE4AFA918CAF62F00026D62 /* fb.png in Resources */,
+				7B483E5718CC101F005F82FB /* statistik.png in Resources */,
 				7BE4AFAC18CAF7BB00026D62 /* avatar.jpg in Resources */,
 				7BE4AFAA18CAF62F00026D62 /* twitter.png in Resources */,
 				7BE4AF7918CAE31200026D62 /* InfoPlist.strings in Resources */,
 				7BE4AFF218CBC7E100026D62 /* AcousticModelSpanish.bundle in Resources */,
 				7BE4AF8218CAE31200026D62 /* Main.storyboard in Resources */,
 				7BE4AFF118CBC7E100026D62 /* AcousticModelEnglish.bundle in Resources */,
+				7B483E5118CC0E0D005F82FB /* koleksi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +443,7 @@
 				7BE4AFDB18CBB6A000026D62 /* CNStatisticViewController.m in Sources */,
 				7BE4AFD818CB8C4C00026D62 /* CNMapAnnotation.m in Sources */,
 				7BE4AF8518CAE31200026D62 /* CNViewController.m in Sources */,
+				7B483E4F18CBFEE8005F82FB /* DDHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

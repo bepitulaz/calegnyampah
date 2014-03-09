@@ -8,6 +8,7 @@
 
 #import "CNStatisticViewController.h"
 #import "PNChart.h"
+#import "DDHelper.h"
 
 @interface CNStatisticViewController ()
 
@@ -28,6 +29,8 @@
 {
     [super viewDidLoad];
 	
+    self.view.backgroundColor = [DDHelper colorFromRGB:@"f0f0f0"];
+    
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         // start downloading the list of caleg
@@ -40,12 +43,13 @@
                 // create array name
                 NSMutableArray *arrayName = [[NSMutableArray alloc] init];
                 for (NSUInteger i = 0; i < objects.count; i++) {
-                    if(i < 4) {
+                    if(i < 6) {
                         [arrayName addObject:[[objects objectAtIndex:i] objectForKey:@"calegName"]];
                     }
                 }
                 
                 NSCountedSet *countedSet = [[NSCountedSet alloc] initWithArray:arrayName];
+                
                 NSMutableArray *xArray = [[NSMutableArray alloc] init];
                 NSMutableArray *yArray = [[NSMutableArray alloc] init];
                 for (id item in countedSet)

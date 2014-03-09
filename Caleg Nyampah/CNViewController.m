@@ -9,6 +9,7 @@
 #import "CNViewController.h"
 #import "CNSaveViewController.h"
 #import <OpenEars/LanguageModelGenerator.h>
+#import "DDHelper.h"
 
 @interface CNViewController ()
 @property (nonatomic, strong) UIImage *imageFromCam;
@@ -27,6 +28,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // change color
+    [self.navigationController navigationBar].barTintColor = [DDHelper colorFromRGB:@"#db5548"];
+    [self.navigationController navigationBar].tintColor = [DDHelper colorFromRGB:@"#ffffff"];
+    self.view.backgroundColor = [DDHelper colorFromRGB:@"f0f0f0"];
     
     // language generator
     LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
@@ -69,6 +75,7 @@
                                                 if (!error) {
                                                     // The count request succeeded. Log the count
                                                     self.photoCount.text = [NSString stringWithFormat:@"%d", count];
+                                                    
                                                 } else {
                                                     // The request failed
                                                 }

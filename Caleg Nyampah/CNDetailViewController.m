@@ -8,6 +8,7 @@
 
 #import "CNDetailViewController.h"
 #import <AFNetworking/AFNetworking.h>
+#import "DDHelper.h"
 
 
 @interface CNDetailViewController ()
@@ -35,6 +36,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [DDHelper colorFromRGB:@"f0f0f0"];
+    
 	// start downloading the detail of caleg
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     

@@ -10,6 +10,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import "CNDetailViewController.h"
 #import "CNMapAnnotation.h"
+#import "DDHelper.h"
 
 @interface CNGalleryViewController ()
 @property (nonatomic, strong) NSArray *dataSource;
@@ -33,6 +34,8 @@
 {
     [super viewDidLoad];
 	
+    self.view.backgroundColor = [DDHelper colorFromRGB:@"f0f0f0"];
+    
     // set map view
     [self.mapView setDelegate:self];
     [self.mapView setShowsUserLocation:YES];
