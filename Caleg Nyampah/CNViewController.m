@@ -66,7 +66,7 @@
 {
     [super viewDidAppear:animated];
     
-    [PFUser logInWithUsernameInBackground:@"bepitulaz" password:@"l3tm31nd0ng"
+    [PFUser logInWithUsernameInBackground:@"username" password:@"password"
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             // Do stuff after successful login.
