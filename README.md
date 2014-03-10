@@ -2,7 +2,7 @@ Caleg Nyampah
 =============
 
 I did this iOS app for Pemilu API hackathon in Bandung, March 8-9, 2014.
-Using this app you can take photo of candidates banner/ads which carelessly placed and become visual garbage.
+By using this app you can take photo of candidates banner/ads which carelessly placed and become visual garbage.
 
 App features:
 
